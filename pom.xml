@@ -4,11 +4,11 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.ruoyi</groupId>
-    <artifactId>ruoyi</artifactId>
+    <groupId>cn.gov.suzhou</groupId>
+    <artifactId>suzhou</artifactId>
     <version>2.1.0</version>
 
-    <name>ruoyi</name>
+    <name>suzhou</name>
     <url>http://www.ruoyi.vip</url>
     <description>若依微服务系统</description>
 
@@ -156,50 +156,50 @@
 
             <!-- 核心模块 -->
 	        <dependency>
-                <groupId>com.ruoyi</groupId>
-                <artifactId>ruoyi-common-core</artifactId>
+                <groupId>cn.gov.suzhou</groupId>
+                <artifactId>sz-common-core</artifactId>
                 <version>${ruoyi.version}</version>
             </dependency>
 			
             <!-- 接口模块 -->
             <dependency>
-                <groupId>com.ruoyi</groupId>
-                <artifactId>ruoyi-common-swagger</artifactId>
+                <groupId>cn.gov.suzhou</groupId>
+                <artifactId>sz-common-swagger</artifactId>
                 <version>${ruoyi.version}</version>
             </dependency>
 	        
             <!-- 安全模块 -->
             <dependency>
-                <groupId>com.ruoyi</groupId>
-                <artifactId>ruoyi-common-security</artifactId>
+                <groupId>cn.gov.suzhou</groupId>
+                <artifactId>sz-common-security</artifactId>
                 <version>${ruoyi.version}</version>
             </dependency>
 	        
             <!-- 权限范围 -->
             <dependency>
-                <groupId>com.ruoyi</groupId>
-                <artifactId>ruoyi-common-datascope</artifactId>
+                <groupId>cn.gov.suzhou</groupId>
+                <artifactId>sz-common-datascope</artifactId>
                 <version>${ruoyi.version}</version>
             </dependency>
 			
             <!-- 日志记录 -->
             <dependency>
-                <groupId>com.ruoyi</groupId>
-                <artifactId>ruoyi-common-log</artifactId>
+                <groupId>cn.gov.suzhou</groupId>
+                <artifactId>sz-common-log</artifactId>
                 <version>${ruoyi.version}</version>
             </dependency>
 			
             <!-- 缓存服务 -->
             <dependency>
-                <groupId>com.ruoyi</groupId>
-                <artifactId>ruoyi-common-redis</artifactId>
+                <groupId>cn.gov.suzhou</groupId>
+                <artifactId>sz-common-redis</artifactId>
                 <version>${ruoyi.version}</version>
             </dependency>
 			
             <!-- 系统接口 -->
             <dependency>
-                <groupId>com.ruoyi</groupId>
-                <artifactId>ruoyi-api-system</artifactId>
+                <groupId>cn.gov.suzhou</groupId>
+                <artifactId>sz-api-system</artifactId>
                 <version>${ruoyi.version}</version>
             </dependency>
 			
@@ -207,12 +207,12 @@
     </dependencyManagement>
 
     <modules>
-		<module>ruoyi-auth</module>
-		<module>ruoyi-gateway</module>
-		<module>ruoyi-visual</module>
-		<module>ruoyi-modules</module>
-		<module>ruoyi-api</module>
-		<module>ruoyi-common</module>
+		<module>sz-auth</module>
+		<module>sz-gateway</module>
+		<module>sz-visual</module>
+		<module>sz-modules</module>
+		<module>sz-api</module>
+		<module>sz-common</module>
     </modules>
     <packaging>pom</packaging>
 

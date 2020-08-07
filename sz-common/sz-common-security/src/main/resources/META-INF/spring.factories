@@ -1,0 +1,8 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  cn.gov.suzhou.common.security.service.UserDetailsServiceImpl,\
+  cn.gov.suzhou.common.security.service.PermissionService,\
+  cn.gov.suzhou.common.security.config.MethodSecurityConfig,\
+  cn.gov.suzhou.common.security.handler.CustomAccessDeniedHandler,\
+  cn.gov.suzhou.common.security.handler.GlobalExceptionHandler
+
+  

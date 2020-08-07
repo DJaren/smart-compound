@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <groupId>cn.gov.suzhou</groupId>
+        <artifactId>sz-modules</artifactId>
+        <version>2.1.0</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+	
+    <artifactId>sz-modules-system</artifactId>
+
+    <description>
+        sz-modules-system系统模块
+    </description>
+	
+    <dependencies>
+    	
+    	<!-- SpringCloud Ailibaba Nacos -->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+        </dependency>
+        
+        <!-- SpringCloud Ailibaba Nacos Config -->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+        </dependency>
+        
+    	<!-- SpringCloud Ailibaba Sentinel -->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-sentinel</artifactId>
+        </dependency>
+        
+    	<!-- SpringBoot Web -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+		
+        <!-- Swagger -->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>${swagger.fox.version}</version>
+        </dependency>
+		
+        <!-- Mysql Connector -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
+        
+        <!-- Ruoyi Common Security -->
+        <dependency>
+            <groupId>cn.gov.suzhou</groupId>
+            <artifactId>sz-common-security</artifactId>
+            <version>2.1.0</version>
+        </dependency>
+        
+        <!-- Ruoyi Common Datascope -->
+        <dependency>
+            <groupId>cn.gov.suzhou</groupId>
+            <artifactId>sz-common-datascope</artifactId>
+            <version>2.1.0</version>
+        </dependency>
+        
+        <!-- Ruoyi Common Log -->
+        <dependency>
+            <groupId>cn.gov.suzhou</groupId>
+            <artifactId>sz-common-log</artifactId>
+            <version>2.1.0</version>
+        </dependency>
+        
+        <!-- Ruoyi Common Swagger -->
+        <dependency>
+            <groupId>cn.gov.suzhou</groupId>
+            <artifactId>sz-common-swagger</artifactId>
+            <version>2.1.0</version>
+        </dependency>
+        
+        <!-- RuoYi Common Redis-->
+        <dependency>
+            <groupId>cn.gov.suzhou</groupId>
+            <artifactId>sz-common-redis</artifactId>
+            <version>2.1.0</version>
+        </dependency>
+
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+   
+</project>
